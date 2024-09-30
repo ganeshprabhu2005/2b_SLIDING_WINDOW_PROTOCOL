@@ -29,12 +29,14 @@ while True:
    print(ack)
    i+=s
 ```
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True: 
  print(s.recv(1024).decode())
  s.send("acknowledgement recived from the server".encode())
+```
  
 ## OUPUT
 ![365882306-813b2b66-c154-47ae-ba05-a558b811eaf5](https://github.com/user-attachments/assets/a035b206-fdfb-4584-ad7a-d2c0f23c89e7)
